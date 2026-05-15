@@ -13,6 +13,6 @@ class Venta:
 
         if self.producto.actualizar_stock(self.cantidad):
 
-            return f"Venta realizada. Total: ${self.calcular_total()}"
+            return f"Venta realizada a {self.cliente.nombre}. Producto: {self.cliente.nombre}. Total: ${self.calcular_total()}"
         
         return "No hay suficiente stock."
